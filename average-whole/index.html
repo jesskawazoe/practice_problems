@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Average Whole</title>
+  </head>
+  <body>
+
+    <script>
+      function isTheAverageWhole(numbersArray){
+
+        var result = 0;
+        for(var i = 0; i < numbersArray.length; i++){
+          result += numbersArray[i];
+        }
+
+        var average = result / numbersArray.length;
+        return Number.isInteger(average);
+      }
+
+    </script>
+  </body>
+</html>
