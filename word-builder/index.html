@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Builder</title>
+  </head>
+  <body>
+
+    <script>
+      function wordBuilder(wordToSpell){
+        var addLetters = "";
+        var result = [];
+
+        for (var i = 0; i < wordToSpell.length; i++){
+          addLetters += wordToSpell[i];
+          result.push(addLetters);
+        }
+        return result;
+      }
+      console.log(wordBuilder("Moon"));
+      console.log(wordBuilder("Stars"));
+      console.log(wordBuilder("JavaScript"));
+    </script>
+  </body>
+</html>
