@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Free Coffee Cups</title>
+  </head>
+  <body>
+
+    <script>
+      function freeCoffeeCups(coffeeCups) {
+        // coffeeCups is the number of cups of coffee which has been bought by the customer
+        if (coffeeCups >= 6) {
+          coffeeCups = coffeeCups+(coffeeCups/6);
+          return Math.floor(coffeeCups);
+        } else {
+          return coffeeCups;
+        }
+      }
+    </script>
+  </body>
+</html>
