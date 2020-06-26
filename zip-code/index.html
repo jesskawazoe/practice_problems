@@ -7,7 +7,14 @@
 
     <script>
       function zipCodeValidator (zipToValidate) {
-
+          if (zipToValidate <= 99999 && zipToValidate > 9999 ) {
+            return true;
+          } else {
+            return false;
+          }
+      console.log(zipCodeValidator("21594")); // -> true
+      console.log(zipCodeValidator("3Eds32")); // -> false
+      console.log(zipCodeValidator("9123465")); // -> false
       }
     </script>
   </body>
