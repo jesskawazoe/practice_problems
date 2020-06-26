@@ -7,8 +7,16 @@
 
     <script>
       function payscaleAnalyzer(payList) {
+        // paylist an array of numeric values which represent the pay rates of various employees
+        // return a numeric value which represents the difference in pay between the highest and lowest paid employees
+        var smallestNumber = Math.min.apply(Math, payList);
+        var largestNumber = Math.max.apply(Math, payList);
+        var result = largestNumber - smallestNumber;
 
-      }
+        for (var i = 0; i < payList.length; i++) {
+          return result;
+          }
+        }
     </script>
   </body>
 </html>
