@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spell Checker</title>
+  </head>
+  <body>
+
+    <script>
+      function spellChecker (userWords, correctWords) {
+
+        var returnWordObject = {
+          correct: [],
+          incorrect: []
+        }
+
+        for (var i = 0; i < userWords.length; i++){
+          if (userWords[i] === correctWords[i]){
+            returnWordObject.correct.push(correctWords[i]);
+          } else {
+            returnWordObject.incorrect.push(userWords[i]);
+          }
+        }
+        return returnWordObject;
+      }
+    </script>
+  </body>
+</html>
