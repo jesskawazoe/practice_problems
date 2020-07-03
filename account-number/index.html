@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Account Number Protector</title>
+  </head>
+  <body>
+
+    <script>
+      function accountNumberProtector(cardNumberString) {
+        // cardNumberString- a string which contains a sixteen digit credit card number
+        var lastFourNumbers = cardNumberString.slice(-4);
+        var result = "XX"+lastFourNumbers;
+
+        for( var i = 0; i < cardNumberString.length; i++){
+          return result;
+        }
+      }
+
+    </script>
+  </body>
+</html>
