@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Volume Calculator</title>
+  </head>
+  <body>
+
+    <script>
+      function volumeCalculator (boxesArray) {
+        // volume = l * w * h
+        // get volume of the arrays then add them together for the total
+        //return ((boxesArray[0][0] * boxesArray[0][1] * boxesArray[0][2]) + (boxesArray[1][0] * boxesArray[1][1] * boxesArray[1][2]) + (boxesArray[2][0] * boxesArray[2][1] * boxesArray[2][2]));
+
+        var totalVolume = 0;
+
+        for (var outer = 0; outer <boxesArray.length; outer++){
+          var boxValues = boxesArray[outer];
+          var thisBoxVolume = boxValues[0]*boxValues[1]*boxValues[2];
+          totalVolume += thisBoxVolume;
+        }
+        return totalVolume;
+      }
+
+      console.log(volumeCalculator([[3, 3, 3], [4, 4, 4], [5, 5, 5]]));
+      console.log(volumeCalculator([[5, 1, 4], [8, 5, 4], [3, 1, 7]]));
+      console.log(volumeCalculator([[5, 4, 2], [12, 15, 21], [7, 7, 7]]));
+    </script>
+  </body>
+</html>
