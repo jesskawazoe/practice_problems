@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payscale Calculator</title>
+  </head>
+  <body>
+
+    <script>
+      function pocketChangeCalculator (changeArray, itemCost) {
+        // changeArray an array of numbers which represent change
+        // itemCost a numeric value which represents the cost of an item
+        var totalChange = (((changeArray[0]*25)+(changeArray[1]*10)+(changeArray[2]*5)+(changeArray[3]*1))/100);
+        var changeArray = totalChange;
+
+        if (changeArray >= itemCost){
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      console.log(pocketChangeCalculator([10, 5, 5, 4], 2.50)); // -> true
+      console.log(pocketChangeCalculator([15, 4, 20, 15], 7.25)); // -> false
+      console.log(pocketChangeCalculator([6, 20, 10, 6], 4.00)); // -> true
+    </script>
+  </body>
+</html>
