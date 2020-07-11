@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clear Zeros</title>
+  </head>
+  <body>
+
+    <script>
+      function clearZeros(numberString) {
+        return Number(numberString).toString();
+      }
+      console.log(clearZeros("00032.2000")); // -> "32.2"
+      console.log(clearZeros("32.07210")); // -> "32.0721"
+      console.log(clearZeros("02100.001200")); // -> "2100.0012"
+
+    </script>
+  </body>
+</html>
