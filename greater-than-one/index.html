@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Is Greater Than One</title>
+  </head>
+  <body>
+
+    <script>
+      function isGreaterThanOne(fraction){
+        var calculateArray = fraction.split("/");
+        console.log(calculateArray);
+
+        if ((calculateArray[0]/calculateArray[1]) > 1) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      console.log(isGreaterThanOne("7/5"));      // -> "true"
+      console.log(isGreaterThanOne("3/4"));     // -> "false"
+      console.log(isGreaterThanOne("13/11"));     // -> "true"
+
+    </script>
+  </body>
+</html>
